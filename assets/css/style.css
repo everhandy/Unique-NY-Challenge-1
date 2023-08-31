@@ -1,3 +1,5 @@
+/* Universal selector section and style attributes that apply to the entire CSS file.*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -52,7 +54,8 @@ a {
     text-decoration: none;
     }
 
-/* Background Image Section */
+/* Background Image Section - added aria-label tag to html file to make it accessible instead of an alt tag because I had difficulty with the image being stored in the CSS file.
+Most of our class examples had the image in the HTML so I had to research and find this solution. I tested this tag with a Chrome extension screen reader and it seems to work correctly*/
 
 .hero {
     height: 800px;
