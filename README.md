@@ -6,6 +6,14 @@ This project represents an example of an on-the-job ticket where I am given a st
 In addition, I was tasked with improving the codebase for long-term stability by ensuring all the links are functioning correctly, increasing the efficiency of the CSS file by consolidating the selectors and properties to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
 I used HTML and CSS in this process to practice the new skills with these technologies that I have been developing in this first week of UNCC's Full-Stack coding bootcamp.
 
+## Link to application:
+
+https://everhandy.github.io/Unique-NY-Challenge-1/
+
+## Link to screenshot:
+
+https://github.com/everhandy/Unique-NY-Challenge-1/tree/main/assets/images/Challenge-1-Screenshot.png
+
 ## Installation:
 
 N/A
