@@ -54,8 +54,7 @@ a {
     text-decoration: none;
     }
 
-/* Background Image Section - added aria-label tag to html file to make it accessible instead of an alt tag because I had difficulty with the image being stored in the CSS file.
-Most of our class examples had the image in the HTML so I had to research and find this solution. I tested this tag with a Chrome extension screen reader and it seems to work correctly*/
+/* Background Image Section - Added an aria-label tag to the section in html file to make it properly accessible instead of using an alt tag (which gave me trouble). I tested this with a screen reader extension and it read the tag effectively*/
 
 .hero {
     height: 800px;
@@ -66,8 +65,9 @@ Most of our class examples had the image in the HTML so I had to research and fi
     background-position: center;
     }
 
-/* Content Section - Due to the reptitive specifications of each, I consolidated each content section (ex. SEO, Online Rep. Management, and Social Media Marketing) into 'content-ex' classes. 
-Also identified each classes' image into a 'content-images' id to consolidate those repetitive specifications*/
+/* Content Section - Simplified Benefits section by consolidating repetitive content division sections into a content-division class while maintain the id of each division for the <a href= in the header section of index.html 
+Originally, I erroneously changed all the content divisions into one single content-images ID (confusing ID with the features of a class). 
+I fixed this so the links should now work properly by distributing the 1 line of code from content-images into each of the float-left and float-right classes. */
 
 .content {
     width: 75%;
@@ -75,7 +75,7 @@ Also identified each classes' image into a 'content-images' id to consolidate th
     margin-left: 20px;
     }
 
-.content-ex {
+.content-division {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -84,26 +84,24 @@ Also identified each classes' image into a 'content-images' id to consolidate th
     color: #ffffff;
     }
 
-.content-ex h2 {
+.content-division h2 {
     margin-bottom: 20px;
     font-size: 36px;
-    }
-
-#content-images {
-    max-height: 200px;
     }
 
 .float-left {
     float: left;
     margin-right: 25px;
+    max-height: 200px;
     }
 
 .float-right {
     float: right;
     margin-left: 25px;
+    max-height: 200px;
     }
 
-/* Benefits Section - Simplified Benefits section by consolidating the repetitive specifications of each benefit into the benefit-ex class and their corresponding images to a benefit-images class*/
+/* Benefits Section - Simplified Benefits section by consolidating repetitive sections and specifications into the a .benefit-example class and consolidate all the examples' images into a .benefit-images class*/
 
 .benefits {
     margin-right: 20px;
@@ -116,12 +114,12 @@ Also identified each classes' image into a 'content-images' id to consolidate th
     background-color: #2589bd;
     }
 
-.benefit-ex {
+.benefit-example {
     margin-bottom: 32px;
     color: #ffffff;
     }
 
-.benefit-ex h3 { 
+.benefit-example h3 { 
     margin-bottom: 10px;
     text-align: center;
     }
